@@ -1,0 +1,9 @@
+.cta{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 2rem 3rem 2rem;
+    
+    &__item{
+        width: 5rem;
+    }
+}

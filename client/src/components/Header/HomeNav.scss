@@ -1,0 +1,23 @@
+.header{
+    background-color: rgba(15, 15, 15, 0.521);
+    width: 100%;
+    &-list{
+        list-style: none;
+        color: rgb(139, 136, 136);
+        display: flex;
+        justify-content: flex-end;
+        gap: 1rem;
+        font-size: 0.8rem;
+        padding: 1rem 2rem;
+        
+        &__item{
+            text-decoration: none;
+            color: rgb(126, 125, 125);
+            &:hover{
+                color: white;
+                
+                
+            }
+        }
+    }
+}

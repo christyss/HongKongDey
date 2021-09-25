@@ -1,0 +1,58 @@
+[
+    {
+        "id": "1",
+        "wordEn": "Dim Sum",
+        "wordCh": "點心",
+        "wordPronounce": "dim1 sam2",
+        "image": "",
+        "description": "Dim sum is a huge part of Hong Kong's unique heritage and cultural identity and therefore, also a big part of our diet. There’s everything from white tablecloth establishments housed inside luxury hotels to neighbourhood gems that are still rough-around-the-edges, but almost equal in quality.",
+        "audio": ""
+    },
+    {
+        "id": "2",
+        "wordEn": "Hong Kong Tramways",
+        "wordCh": "電車 (叮叮)",
+        "wordPronounce": "din6 ce1 (ding1 ding1)",
+        "image": "",
+        "description": "Hong Kong Tramways is a 3 ft 6 in narrow-gauge tram system in Hong Kong. Owned and operated by RATP Dev Transdev Asia, the tramway runs on Hong Kong Island between Kennedy Town and Shau Kei Wan, with a branch circulating through Happy Valley.",
+        "audio": ""
+    },
+    {
+        "id": "3",
+        "wordEn": "Claypot Rice",
+        "wordCh": "煲仔飯",
+        "wordPronounce": "",
+        "image": "",
+        "description": "Like other neighboring Asian countries, Hong Kong is famous for its rice meals. Another winter comfort food, claypot rice or bao zai fan is Chinese-style rice cooked (or scorched) and served in, you guessed it, a clay pot topped with a variety of cured meat like chicken, pork, duck, Chinese sausage and vegetables. The pots are slow-cooked over a gas or charcoal stove, letting savory juices from the meats drip on the rice while a layer of crunchy, charred rice is formed at the bottom of the pot. Mixed together and splashed with a sauce mixture of soy sauce, fish sauce, sugar, and pepper, this dish is truly worth indulging in.",
+        "audio": ""
+    },
+    {
+        "id": "4",
+        "wordEn": "Fireworks",
+        "wordCh": "煙花",
+        "wordPronounce": "jin1 faa1",
+        "image": "",
+        "description": "Hong Kong fireworks festivals are legendary, watching as thousands of bright lights explode over the world's most beautiful harbour is simply a mesmerizing experience, one you should not miss if you happen to be in Hong Kong during one of these ocassions.",
+        "audio": ""
+    },
+    {
+        "id": "5",
+        "wordEn": "Miss",
+        "wordCh": "小姐",
+        "wordPronounce": "siu2 ze2",
+        "image": "",
+        "description": "A title of respect prefixed to a young lady and woman's name or position, like Miss or Ms. It also means a prostitue in Cantonese slang.",
+        "audio": ""
+    },
+    {
+        "id": "",
+        "wordEn": "",
+        "wordCh": "",
+        "wordPronounce": "",
+        "image": "",
+        "description": "",
+        "audio": ""
+    }
+
+    
+]

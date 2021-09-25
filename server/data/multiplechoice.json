@@ -1,0 +1,46 @@
+[
+    {
+        "id": "1",
+        "questionText" : "Please select the correct answer.",
+        "image": "",
+        "answerOptions":[
+            {"answer": "牛肉飯", "isCorrect": false},
+            {"answer": "雞飯", "isCorrect": false},
+            {"answer": "煲仔飯", "isCorrect": true},
+            {"answer": "白飯", "isCorrect": false}
+        ]
+    },
+    {
+        "id": "2",
+        "questionText" : "Please select the correct answer.",
+        "image": "",
+        "answerOptions":[
+            {"answer": "點心", "isCorrect": true},
+            {"answer": "同心", "isCorrect": false},
+            {"answer": "愛心", "isCorrect": false},
+            {"answer": "好心", "isCorrect": false}
+        ]
+    },
+    {
+        "id": "3",
+        "questionText" : "Please select the correct answer.",
+        "image": "",
+        "answerOptions":[
+            {"answer": "我唔知道", "isCorrect": false},
+            {"answer": "鴨同雞講", "isCorrect": false},
+            {"answer": "雞同鴨講", "isCorrect": true},
+            {"answer": "雞鴨鵝腸", "isCorrect": false}
+        ]
+    },
+    {
+        "id": "4",
+        "questionText" : "Please select the correct answer.",
+        "image": "",
+        "answerOptions":[
+            {"answer": "坐車", "isCorrect": false},
+            {"answer": "單車", "isCorrect": false},
+            {"answer": "車車", "isCorrect": false},
+            {"answer": "電車", "isCorrect": true}
+        ]
+    }
+]
