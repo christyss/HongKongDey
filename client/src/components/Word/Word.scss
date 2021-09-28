@@ -1,0 +1,68 @@
+.word{
+    background-color: #000;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    &-navbar{
+        color: rgb(177, 172, 172);
+        text-decoration: none;
+        text-align: right;
+        margin: 1rem 3rem 0 0;
+        font-size: 1.2rem;
+        &:hover{
+            color: rgb(172, 238, 232);
+        }
+    }
+}
+.content{
+    color: white;
+    text-align: center;
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: space-around;
+    height: 90%;
+
+    &__title-en{
+        font-size: 3rem;
+        margin: 1rem 0;
+    }
+    &__description{
+        line-height: 2rem;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    &__title-ch{
+        font-size: 3rem;
+    }
+    &__img{
+        width: 100%;
+        height: 15rem;
+        object-fit: cover;
+    }
+    &__pronounce{
+        font-size: 1.5rem;
+    }
+    &__right{
+        width: 35%;
+        margin: 10% 0;
+    }
+    &__audio{
+        margin-top: 1rem;
+    }
+}
+.cta-words{
+    display: flex;
+    justify-content: space-around;
+    margin: -1.5rem 2rem 3rem 2rem;
+    z-index: 2;
+    
+
+    &__item{
+        width: 5rem;
+    }
+    &__img{
+        width: 3rem;
+        height: 3rem;
+    }
+}

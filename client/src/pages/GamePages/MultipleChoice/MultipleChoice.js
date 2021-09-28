@@ -1,36 +1,30 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
+import axios from 'axios';
 import slang from '../../../assets/images/slang1.jpeg';
 import dim from '../../../assets/images/dim-sum.jpeg'
-import './MultipleChoice.scss'
-;
+import './MultipleChoice.scss';
 
-export function MultipleChoice() {
-    const questions = [
-        {
-            questionText : "Please select the correct answer below.",
-            image: {slang},
-            options: [
-                {answer: "牛肉飯", isCorrect: false},
-                {answer: "雞飯", isCorrect: false},
-                {answer: "煲仔飯", isCorrect: true},
-                {answer: "白飯", isCorrect: false}
-            ]
-        },
-        {
-            questionText : "Please select the correct answer.",
-            image: {dim},
-            options: [
-                {answer: "點心", isCorrect: true},
-                {answer: "同心", isCorrect: false},
-                {answer: "愛心", isCorrect: false},
-                {answer: "好心", isCorrect: false}
-            ]
-        }
+const MultipleChoice = () => {
+    
+    const [questions, setQuestions] = useState([]);
+    
 
-    ]
+    useEffect(() => {
+        axios
+        .get("http://localhost:8080/game/multiplechoice")
+        .then((res) => {
+            console.log(res.data);
+            setQuestions(res.data);
+        })
+        .catch((err) => {
+            console.log(`Error from getQuestion ${err}`);
+        })
+    }, [])
 
     const [currentQuestion, setCurrentQuestion] = useState(0);
+    
+    const [currentIndex, setCurrentIndex] = useState(0);
 
     const [showScore, setShowScore] = useState(false);
 
@@ -48,7 +42,17 @@ export function MultipleChoice() {
             setShowScore(true)
         }
     }
-
+    
+    if(questions.length === 0){
+        return (
+        <div className="Loading-page">
+            <div className="Loading-page__item">
+              <p className="Loading-page__item--size">Loading</p>  
+            </div>
+        </div>)
+       
+    }
+    
     return (
         <section className="mc">
             {showScore ? (
@@ -61,27 +65,27 @@ export function MultipleChoice() {
                     </div>
                 </section>
             ) : (
-            
+        <section>
+                <div>
             <div className="mc-container">
-                <div className="mc-content">
-                    <h3>{questions[0].questionText}</h3>
-                    <img className="mc-content__img" src={questions[0].image} alt="" />
+                <div className="mc-content">   
+                    <h3 className="mc-content__text">{questions[currentIndex].questionText}</h3>
+                    <img className="mc-content__img" src={questions[currentQuestion].image} alt="" />
                     <div className="mc-content__options">
                         <div className="mc-content__options-list">
-                            {questions[currentQuestion].options.map((answerOpt) => 
-                                <button onClick={() => handleAnswerClick(answerOpt.isCorrect)} className="mc-content__options-list-cta">{answerOpt.answer}</button>
-                            )}
+                                {questions[currentQuestion].answerOptions.map((answerOpt) => (
+                                <button key={answerOpt.answer} onClick={() => handleAnswerClick(answerOpt.isCorrect)} className="mc-content__options-list-cta"><p className="mc-content__options-list-cta-text">{answerOpt.answer}</p></button>
+                            ))}
+                        
                         </div>
                     </div>
                     <div>
-                        <h4>Your score for now is {score}/{questions.length}</h4>
+                        <h4 className="mc-score">Your score for now is {score}/{questions.length}</h4>
                     </div>
                 </div>
-            </div>
-            )}
+            </div></div>
+            
+        </section>  )}
         </section>
-    )
-}
-
-
+)}
 export default MultipleChoice

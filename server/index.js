@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const wordsRoute = require('./routes/words');
+const wordsRoute = require('./routes/word');
 const slangRoute = require('./routes/slang');
 const quizRoute = require('./routes/multiple-choice-questions');
 

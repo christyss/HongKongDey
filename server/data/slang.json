@@ -1,35 +1,35 @@
 [
     {
         "id": "1",
-        "image": "",
-        "slangEng": "Wearing a green hat",
-        "description": "This phrase can be used to describe a person, specifically a man, being cheated on. To put in simpler terms, if you’re currently two-timing your boyfriend, you're giving him a green hat to wear. ",
-        "audio": ""
-    },
-    {
-        "id": "2",
-        "image": "",
+        "image": "http://localhost:8080/images/slang1.jpeg",
         "slangEng": "A chicken talking to a duck",
         "description": "How do a chicken and a duck communicate, you ask? Unsuccessfully. This phrase describes people who are unable to properly communicate with each other, whether due to language barriers or different values. No matter what is said, the chicken and duck just can’t seem to understand each other.",
         "audio": ""
     },
     {
+        "id": "2",
+        "image": "http://localhost:8080/images/slang2.jpeg",
+        "slangEng": "Wearing a green hat",
+        "description": "This phrase can be used to describe a person, specifically a man, being cheated on. To put in simpler terms, if you’re currently two-timing your boyfriend, you're giving him a green hat to wear. ",
+        "audio": ""
+    },
+    {
         "id": "3",
-        "image": "",
+        "image": "http://localhost:8080/images/slang3.jpeg",
         "slangEng": "Kicking the ball",
         "description": "A metaphor for sloughing off all your responsibilities to someone else. The phrase is most commonly used to describe someone who fakes an illness and skips a day at the office in order to avoid work and responsibilities.",
         "audio": ""
     },
     {
         "id": "4",
-        "image": "",
+        "image": "http://localhost:8080/images/slang4.jpeg",
         "slangEng": "Collecting soldiers",
         "description": "Used to describe the process by which a girl accumulates many male 'friends' with the sole purpose of friend-zoning them and utilising them to help her run tedious errands or even getting them to buy her expensive gifts.",
         "audio": ""
     },
     {
         "id": "5",
-        "image": "",
+        "image": "http://localhost:8080/images/slang5.jpeg",
         "slangEng": "To ride an ox while looking for a horse",
         "description": "This phrase describes the situation when a person is working one job but is actually on the lookout for something better at the same time. This saying can also be applied to relationships.",
         "audio": ""

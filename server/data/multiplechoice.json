@@ -2,7 +2,7 @@
     {
         "id": "1",
         "questionText" : "Please select the correct answer.",
-        "image": "",
+        "image": "http://localhost:8080/images/claypot.jpeg",
         "answerOptions":[
             {"answer": "牛肉飯", "isCorrect": false},
             {"answer": "雞飯", "isCorrect": false},
@@ -13,7 +13,7 @@
     {
         "id": "2",
         "questionText" : "Please select the correct answer.",
-        "image": "",
+        "image": "http://localhost:8080/images/dim-sum.jpeg",
         "answerOptions":[
             {"answer": "點心", "isCorrect": true},
             {"answer": "同心", "isCorrect": false},
@@ -24,7 +24,7 @@
     {
         "id": "3",
         "questionText" : "Please select the correct answer.",
-        "image": "",
+        "image": "http://localhost:8080/images/slang1.jpeg",
         "answerOptions":[
             {"answer": "我唔知道", "isCorrect": false},
             {"answer": "鴨同雞講", "isCorrect": false},
@@ -35,7 +35,7 @@
     {
         "id": "4",
         "questionText" : "Please select the correct answer.",
-        "image": "",
+        "image": "http://localhost:8080/images/tram.jpeg",
         "answerOptions":[
             {"answer": "坐車", "isCorrect": false},
             {"answer": "單車", "isCorrect": false},

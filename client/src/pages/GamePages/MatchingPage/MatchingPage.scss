@@ -1,0 +1,57 @@
+.page{
+    background-color: #9D5900;
+    height: 100vh;
+    width: 100%;
+    &-title{
+        color: blanchedalmond;
+        text-align: center;
+        font-size: 3rem;
+        padding-top: 1.5rem;
+    }
+}
+.game-container{
+    display: flex;
+    flex-direction: column;
+    
+}
+.game-info{
+    color: #FFBB89;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    margin: 2rem 10rem;
+}
+
+.card{
+    background-color: rgb(228, 182, 113);
+    height: 9rem;
+    width: 6rem;
+    border-radius: 5px;
+    // background-image: url(../../../assets/icons/puzzle.png);
+    // background-size: cover;
+    
+    &-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 20rem;
+        gap: 2rem;
+    }
+
+}
+.card-item{
+    height: 9rem;
+    width: 5.5rem;
+    object-position: right;
+    object-fit: cover;
+}
+.card.visible .card-back{
+    transform: rotateY(-180deg);
+}
+.card.visible .card-front{
+    transform: rotateY(0);
+}
+.card-front{
+    transform: rotateY(180deg);
+}

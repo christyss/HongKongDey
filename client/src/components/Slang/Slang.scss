@@ -1,0 +1,55 @@
+.slang-navbar{
+   text-decoration: none;
+    color: cadetblue;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: flex-end;
+    margin: 1rem 2rem 0 0;
+    &:hover{
+        color: rgb(173, 43, 43);
+    }
+}
+.slang{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2.75rem 4rem;
+    
+    &-content{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        &__img{
+            height: 25rem;
+
+        }
+        &__right{
+            width: 40%;
+            
+            &-title{
+                margin-bottom: 2rem;
+            }
+            &-description{
+                font-size: 1rem;
+                line-height: 1.5rem;
+                margin-bottom: 2rem;
+            }
+        }
+        // &__audio{
+
+        // }
+    }
+}
+.cta{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 2rem 3rem 2rem;
+    
+    &__item{
+        width: 5rem;
+    }
+    &__img{
+        width: 3rem;
+        height: 3rem;
+    }
+}
