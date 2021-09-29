@@ -1,15 +1,32 @@
+@keyframes fade-in-top{
+    0%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 
+
 .word{
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.281);
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
+    position: relative;
+    
+    
     &-navbar{
         color: rgb(177, 172, 172);
         text-decoration: none;
         text-align: right;
         margin: 1rem 3rem 0 0;
         font-size: 1.2rem;
+        font-family: 'Inter';
+        font-weight: 400;
+
         &:hover{
             color: rgb(172, 238, 232);
         }
@@ -22,10 +39,12 @@
     display: flex;
     justify-content: space-around;
     height: 90%;
+    font-family: 'Inter';
 
     &__title-en{
         font-size: 3rem;
         margin: 1rem 0;
+        font-weight: 600;
     }
     &__description{
         line-height: 2rem;
@@ -34,6 +53,7 @@
     }
     &__title-ch{
         font-size: 3rem;
+        
     }
     &__img{
         width: 100%;
@@ -42,10 +62,15 @@
     }
     &__pronounce{
         font-size: 1.5rem;
+        font-weight: 400;
+    }
+    &__left{
+        animation: fade-in-top 1s;
     }
     &__right{
         width: 35%;
         margin: 10% 0;
+        animation: fade-in-top 2s;
     }
     &__audio{
         margin-top: 1rem;
@@ -54,8 +79,9 @@
 .cta-words{
     display: flex;
     justify-content: space-around;
-    margin: -1.5rem 2rem 3rem 2rem;
+    margin: -2rem 2rem 3rem 2rem;
     z-index: 2;
+    animation: fade-in-top 2s;
     
 
     &__item{

@@ -2,10 +2,14 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import LeftArrow from '../../assets/icons/previous.png';
 import RightArrow from '../../assets/icons/next.png';
+import HomeBackground from '../../assets/videos/WordBg.mp4';
 import './Word.scss';
 
 const Word = ({wordInfo}) => {
+    console.log(wordInfo);
     return (
+        <>
+        <video playsInline muted autoPlay loop className="page-background"><source src={HomeBackground} type="video/mp4" /></video>
         <section className="word">
             <Link to="/" className="word-navbar">Home</Link>
             <div className="content">
@@ -19,7 +23,7 @@ const Word = ({wordInfo}) => {
                 <div className="content__right">
                     <p className="content__description">{wordInfo.description}</p>
                     <div>
-                    <audio controls className="content__audio" ><source src={wordInfo.audio} type="audio/mpeg" /></audio> 
+                    <audio controls src={wordInfo.audio} className="content__audio" ><source src={wordInfo.audio} type="audio/mpeg" /></audio> 
                     </div>
                     
                 </div>
@@ -33,7 +37,7 @@ const Word = ({wordInfo}) => {
                 </Link>
             </div>
         </section>
-        
+        </>
     )
 }
 

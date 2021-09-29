@@ -6,7 +6,6 @@ import Word from './pages/LearningPages/WordPage/WordPage';
 import Slang from './pages/LearningPages/SlangPage/SlangPage';
 import MultipleChoice from './pages/GamePages/MultipleChoice/MultipleChoice';
 import Matching from './pages/GamePages/MatchingPage/MatchingPage';
-import Test from './pages/test/test';
 
 class App extends Component {
   render(){
@@ -19,7 +18,6 @@ class App extends Component {
           <Route path="/learning/slang/:id" component={Slang} />
           <Route path="/game/multiplechoice" component={MultipleChoice} />
           <Route path="/game/matching" component={Matching} />
-          <Route path="/learning/word" exact component={Test} />
         </Switch>
       </BrowserRouter>
     );

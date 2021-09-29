@@ -42,7 +42,7 @@
         "wordPronounce": "siu2 ze2",
         "image": "http://localhost:8080/images/miss.jpeg",
         "description": "A title of respect prefixed to a young lady and woman's name or position, like Miss or Ms. It also means a prostitue in Cantonese slang.",
-        "audio": ""
+        "audio": "http://localhost:8080/audio/Miss.mp3"
     }
     
 ]

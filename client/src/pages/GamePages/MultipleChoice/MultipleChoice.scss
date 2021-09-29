@@ -1,3 +1,40 @@
+@use '../../../partials/typography' as *;
+
+@keyframes fade-in-right{
+    0%{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+} 
+@keyframes fade-in-left{
+    0%{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+        transform: translate(0);
+    }
+    50%{
+        opacity: 0.5;
+        transform: scale(1.2);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(1);
+    }
+} 
+
 .mc{
     background-image: url(../../../assets/images/game.jpeg);
     background-position: center top;
@@ -10,12 +47,19 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        
     }
     &-content{
+        
         position: absolute;
-        background-color: white;
+        // background: linear-gradient(
+        //     to right bottom,
+        //     rgba(248, 248, 241, 0.9),
+        //     rgba(255,255,255,0.6)
+        // );
+        background-color: rgba(255, 255, 255, 0.863);
         border-radius: 5px;
-        box-shadow: 4px 4px 4px 4px #fdc064;
+        box-shadow: 2px 2px 2px 2px #fdc06498;
         height: 30rem;
         width: 35rem;
         display: flex;
@@ -28,24 +72,27 @@
             object-fit: cover;
             object-position: top;
             margin-top: 1rem;
+            animation: fade-in-right 1s;
         }
         &__text{
             color: rgb(75, 42, 5);
+            font-family: 'Inter';
         }
         &__options{
             display: flex;
             margin-top: 2rem;
             &-list{
                 &-cta{
-                    margin: 0 1rem;
+                    margin: 0 0.5rem;
                     background-color: rgb(245, 230, 188);
                     border-radius: 15px;
-                    height: 2.5rem;
-                    padding: 0.5rem 1rem;
+                    height: 100%;
+                    padding: 0.25rem 0.5rem;
                     border: none;
                     border: 1px solid rgba(238, 208, 162, 0.753);
                     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
                     cursor: pointer;
+                    animation: fade-in-left 1s;
                     &:hover{
                       transform: scale(0.9);
                       background-color: #c08225; 
@@ -53,10 +100,19 @@
                     
                     &-text{
                       color: #50350d; 
+                      font-size: 1rem;
+                      width: 6rem;
                       &:hover{
                         color: antiquewhite; 
                       }
-                    } 
+                    }
+                    &-subtext{
+                        font-size: 0.7rem;
+                        width: 1rem;
+                        &:hover{
+                            color: antiquewhite; 
+                        }
+                    }
                 }
             }
         
@@ -66,6 +122,8 @@
         padding-top: 1.5rem;
         font-size: 0.8rem;
         color: rgb(131, 71, 71);
+        font-family: 'Inter';
+        font-weight: 400;
     }
 }
 .score-section{
@@ -89,8 +147,8 @@
     background-color: rgba(230, 194, 161, 0.548);
     border-radius: 5px;
     box-shadow: 5px 5px 5px 5px #66310ebd;
-    height: 15rem;
-    width: 20rem;
+    height: 20rem;
+    width: 25rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -98,15 +156,24 @@
     &__text{
         color: rgb(155, 69, 88);
         font-size: 2rem;
+        animation: fade-in 2s;
+        font-family: 'Inter';
+        font-weight: 500;
     }
     &__link{
+        
         text-decoration: none;
         color: rgb(87, 57, 12);
         background-color: rgba(240, 204, 157, 0.747);
         border: 2px solid rgba(87, 57, 12, 0.589);
         border-radius: 20px;
         padding: 0.75rem;
-        margin-top: 2rem;
+        margin: 2rem 0.5rem 0 0.5rem;
+        &-text{
+            font-family: 'Inter';
+            font-weight: 500;
+        }
+       
         &:hover{
             transform: scale(1.1);
         }

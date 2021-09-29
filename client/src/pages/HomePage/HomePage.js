@@ -10,10 +10,11 @@ import HomeBackground from '../../assets/videos/HomeBg.mp4';
 import './HomePage.scss';
 
 export class HomePage extends Component {
+    
     render() {
         return (
             <section>
-                <video autoPlay loop className="page-background"><source src={HomeBackground} type="video/mp4" /></video>
+                <video playsInline muted autoPlay loop className="page-background"><source src={HomeBackground} type="video/mp4" /></video>
                 <section className="home__desktop">
                     {/* <HomeNav /> */}
                     <div className="home__desktop-background">
@@ -28,11 +29,11 @@ export class HomePage extends Component {
                                 <img className="learning-option__desktop-img" src={word} alt="" />
                                     <h4 className="learning-option__desktop-label">Word</h4> 
                                 </Link>
-                                <Link to={`/learning/slang/1`} className="learning-option__desktop--space">
+                                <Link to={`/learning/slang/1`} className="learning-option__desktop learning-option__desktop--space">
                                 <img className="learning-option__desktop-img" src={slang} alt="" />
                                     <h4 className="learning-option__desktop-label">Slang</h4> 
                                 </Link>
-                                <div className="learning-option__desktop learning-option__desktop">
+                                <div className="learning-option__desktop">
                                 <img className="learning-option__desktop-img" src={chat} alt="" />
                                     <h4 className="learning-option__desktop-label">Conversation</h4> 
                                 </div>
@@ -43,10 +44,10 @@ export class HomePage extends Component {
                                     <img className="game-option__desktop-img" src={mc} alt="" />
                                     <h4 className="game-option__desktop-label">Multiple<br /> Choice</h4> 
                                 </Link>
-                                <Link to={`/game/matching`} className="game-option__desktop">
+                                <div className="game-option__desktop">
                                     <img className="game-option__desktop-img" src={chat} alt="" />
                                     <h4 className="game-option__desktop-label">Matching</h4> 
-                                </Link>
+                                </div>
                             </div>
                         </section>
                     </div>

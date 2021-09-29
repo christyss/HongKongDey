@@ -1,8 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import axios from 'axios';
-import slang from '../../../assets/images/slang1.jpeg';
-import dim from '../../../assets/images/dim-sum.jpeg'
+import scoreBackground from '../../../assets/videos/MC-background.mp4';
 import './MultipleChoice.scss';
 
 const MultipleChoice = () => {
@@ -23,8 +22,6 @@ const MultipleChoice = () => {
     }, [])
 
     const [currentQuestion, setCurrentQuestion] = useState(0);
-    
-    const [currentIndex, setCurrentIndex] = useState(0);
 
     const [showScore, setShowScore] = useState(false);
 
@@ -60,7 +57,7 @@ const MultipleChoice = () => {
                     <div className="score-section__background">
                         <div className="score">
                             <h3 className="score__text">You scored {score} out of {questions.length}</h3>
-                            <Link to={`/`} className="score__link"><h3>Return Home</h3></Link>
+                            <Link to={`/`} className="score__link"><h3 className="score__link-text">Return Home</h3></Link>
                         </div>
                     </div>
                 </section>
@@ -69,12 +66,15 @@ const MultipleChoice = () => {
                 <div>
             <div className="mc-container">
                 <div className="mc-content">   
-                    <h3 className="mc-content__text">{questions[currentIndex].questionText}</h3>
+                    <h3 className="mc-content__text">{questions[currentQuestion].questionText}</h3>
                     <img className="mc-content__img" src={questions[currentQuestion].image} alt="" />
                     <div className="mc-content__options">
                         <div className="mc-content__options-list">
                                 {questions[currentQuestion].answerOptions.map((answerOpt) => (
-                                <button key={answerOpt.answer} onClick={() => handleAnswerClick(answerOpt.isCorrect)} className="mc-content__options-list-cta"><p className="mc-content__options-list-cta-text">{answerOpt.answer}</p></button>
+                                <button key={answerOpt.answer} onClick={() => handleAnswerClick(answerOpt.isCorrect)} className="mc-content__options-list-cta">
+                                    <p className="mc-content__options-list-cta-text">{answerOpt.answer}<br />
+                                    <span className="mc-content__options-list-cta-subtext">{answerOpt.answerPronounce}</span></p>
+                                    </button>
                             ))}
                         
                         </div>
@@ -83,8 +83,8 @@ const MultipleChoice = () => {
                         <h4 className="mc-score">Your score for now is {score}/{questions.length}</h4>
                     </div>
                 </div>
-            </div></div>
-            
+            </div>
+        </div>
         </section>  )}
         </section>
 )}

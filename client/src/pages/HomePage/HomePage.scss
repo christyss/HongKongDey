@@ -1,6 +1,27 @@
 @use '../../partials/typography' as *;
 @use '../../partials/mixins' as *;
 
+@keyframes fade-in-left{
+    0%{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+} 
+@keyframes fade-in-right{
+    0%{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+} 
+
 @include tablet{
     .home__mobile{
         display: none;
@@ -9,10 +30,6 @@
         position: fixed;
     }
     .home__desktop{
-        // background-image: url(../../assets/images/hk-destop-2.jpeg);
-        // background-repeat: no-repeat;
-        // background-position: center;
-        // background-size: cover;
         width: 100%;
         height: 100%;
         &-background{
@@ -30,9 +47,10 @@
         text-align: center;
         color: white;
         margin: 10rem 2rem 0 2rem;
+        animation: fade-in-left 2s;
         &-ch{
             font-size: 4rem;
-            font-family: 'TensentypeXingKaiF';
+            
         }
         &-en{
             font-size: 2rem;
@@ -43,6 +61,7 @@
     .learning-game{
         margin-top: 2rem;
         margin-left: 5rem;
+        animation: fade-in-right 2s;
     }
     .learning-title__desktop{
         color: antiquewhite;
@@ -50,6 +69,10 @@
         margin-top: 1rem;
         margin: 0 5rem;
         padding: 0.5rem 0;
+        font-family: 'Inter';
+        font-size: 400;
+        font-family: 'Inter';
+        font-weight: 600;
 
     }
     .learning__desktop{
@@ -61,6 +84,8 @@
     }
     .learning-option__desktop{
         text-decoration: none;
+        cursor: pointer;
+        
         &:hover{
             transform: scale(1.1);
         }    
@@ -71,7 +96,9 @@
             
         }
         &-label{
-            color: rgb(252, 251, 249);
+            color: antiquewhite;
+            font-family: 'Inter';
+            font-weight: 500;
         }
         &--space{
             margin: 0 4rem;
@@ -83,6 +110,8 @@
         text-align: center;
         margin: 3rem 5rem 0 5rem;
         padding: 0.5rem 0;
+        font-family: 'Inter';
+        font-weight: 600;
 
     }
     .game__desktop{
@@ -95,6 +124,8 @@
     .game-option__desktop{ 
         display: flex;
         flex-direction: column;
+        cursor: pointer;
+        text-decoration: none;
         &:hover{
             transform: scale(1.1);
         }    
@@ -105,7 +136,11 @@
         }
         &-label{
             text-decoration: none;
+            border: none;
             color: antiquewhite;
+            line-height: 1.5rem;
+            font-family: 'Inter';
+            font-weight: 500;
         }
     }
     

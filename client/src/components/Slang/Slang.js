@@ -7,8 +7,8 @@ import './Slang.scss';
 const Slang = ({slang}) => {
     return (
         <>
-        <Link to="/" className="slang-navbar">Home</Link>
         <section className="slang">
+            <Link to="/" className="slang-navbar">Home</Link>
                 <div className="slang-content">
                     <div className="slang-content__left">
                         <img className="slang-content__img" src={slang.image} alt="" />
@@ -16,7 +16,7 @@ const Slang = ({slang}) => {
                     <div className="slang-content__right">
                         <h2 className="slang-content__right-title">{slang.slangEng}</h2>
                         <p className="slang-content__right-description">{slang.description}</p>
-                        <audio controls className="slang-content__audio" ><source></source> </audio>
+                        <audio controls src={slang.audio} className="slang-content__audio" ><source src={slang.audio} type="audio/mpeg" /></audio>
                     </div>
                 </div>
                 <div className="cta">

@@ -4,10 +4,10 @@
         "questionText" : "Please select the correct answer.",
         "image": "http://localhost:8080/images/claypot.jpeg",
         "answerOptions":[
-            {"answer": "牛肉飯", "isCorrect": false},
-            {"answer": "雞飯", "isCorrect": false},
-            {"answer": "煲仔飯", "isCorrect": true},
-            {"answer": "白飯", "isCorrect": false}
+            {"answer": "牛肉飯", "answerPronounce": "ngau4 juk6 faan6", "isCorrect": false},
+            {"answer": "雞飯", "answerPronounce": "gai1 faan6", "isCorrect": false},
+            {"answer": "煲仔飯", "answerPronounce": "bou1 zai2 faan6", "isCorrect": true},
+            {"answer": "白飯", "answerPronounce": "baak6 faan6", "isCorrect": false}
         ]
     },
     {
@@ -15,10 +15,10 @@
         "questionText" : "Please select the correct answer.",
         "image": "http://localhost:8080/images/dim-sum.jpeg",
         "answerOptions":[
-            {"answer": "點心", "isCorrect": true},
-            {"answer": "同心", "isCorrect": false},
-            {"answer": "愛心", "isCorrect": false},
-            {"answer": "好心", "isCorrect": false}
+            {"answer": "點心", "answerPronounce": "dim1 sam2", "isCorrect": true},
+            {"answer": "同心", "answerPronounce": "tung4 sam2", "isCorrect": false},
+            {"answer": "愛心", "answerPronounce": "oi3 sam1", "isCorrect": false},
+            {"answer": "好心", "answerPronounce": "hou2 sam1", "isCorrect": false}
         ]
     },
     {
@@ -26,10 +26,10 @@
         "questionText" : "Please select the correct answer.",
         "image": "http://localhost:8080/images/slang1.jpeg",
         "answerOptions":[
-            {"answer": "我唔知道", "isCorrect": false},
-            {"answer": "鴨同雞講", "isCorrect": false},
-            {"answer": "雞同鴨講", "isCorrect": true},
-            {"answer": "雞鴨鵝腸", "isCorrect": false}
+            {"answer": "我唔知道", "answerPronounce": "ngo5 m4 zi1 dou6*3", "isCorrect": false},
+            {"answer": "鴨同雞講", "answerPronounce": "aap3 tung4 gai1 gong2", "isCorrect": false},
+            {"answer": "雞同鴨講", "answerPronounce": "gai1 tung4 aap3 gong2", "isCorrect": true},
+            {"answer": "雞鴨鵝腸", "answerPronounce": "gai1 aap3 ngo4*2 coeng4", "isCorrect": false}
         ]
     },
     {
@@ -37,10 +37,21 @@
         "questionText" : "Please select the correct answer.",
         "image": "http://localhost:8080/images/tram.jpeg",
         "answerOptions":[
-            {"answer": "坐車", "isCorrect": false},
-            {"answer": "單車", "isCorrect": false},
-            {"answer": "車車", "isCorrect": false},
-            {"answer": "電車", "isCorrect": true}
+            {"answer": "坐車", "answerPronounce": "co5 sam2", "isCorrect": false},
+            {"answer": "單車", "answerPronounce": "daan1 sam2", "isCorrect": false},
+            {"answer": "車車", "answerPronounce": "ce1 ce1", "isCorrect": false},
+            {"answer": "電車", "answerPronounce": "din6 ce1", "isCorrect": true}
+        ]
+    },
+    {
+        "id": "5",
+        "questionText" : "Please select the correct answer.",
+        "image": "http://localhost:8080/images/miss.jpeg",
+        "answerOptions":[
+            {"answer": "小姐", "answerPronounce": "siu2 ze2", "isCorrect": true},
+            {"answer": "車車", "answerPronounce": "ce1 ce1", "isCorrect": false},
+            {"answer": "點心", "answerPronounce": "dim1 sam2", "isCorrect": false},
+            {"answer": "姐姐", "answerPronounce": "ze2 ze2", "isCorrect": false}
         ]
     }
 ]

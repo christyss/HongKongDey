@@ -1,3 +1,26 @@
+@use '../../partials/typography' as *;
+
+@keyframes fade-in-right{
+    0%{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+} 
+@keyframes fade-in-left{
+    0%{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 .slang-navbar{
    text-decoration: none;
     color: cadetblue;
@@ -5,15 +28,23 @@
     display: flex;
     justify-content: flex-end;
     margin: 1rem 2rem 0 0;
+    position: relative;
+    font-weight: 600;
     &:hover{
         color: rgb(173, 43, 43);
     }
+}
+.slang-background{
+    position: absolute;
+    height: 100vh;
 }
 .slang{
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 2.75rem 4rem;
+    position: relative;
+    font-family: 'Inter';
     
     &-content{
         display: flex;
@@ -23,8 +54,12 @@
             height: 25rem;
 
         }
+        &__left{
+            animation: fade-in-right 2s;
+        }
         &__right{
             width: 40%;
+            animation: fade-in-left 2s;
             
             &-title{
                 margin-bottom: 2rem;

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import WordComponent from '../../../components/Word/Word';
+import Word from '../../../components/Word/Word';
 
 export class WordPage extends Component {
     state ={
@@ -30,9 +30,10 @@ export class WordPage extends Component {
     
     }
 
-    componentDidUpdate(prevProps){
-      console.log(this.props.match);
-      if(this.props.match.params !== prevProps.match.params){
+    componentDidUpdate(prevProps, prevState){
+      console.log(prevProps);
+      console.log(prevState);
+      if(this.props.match.params.id !== prevProps.match.params.id){
         const wordId = this.props.match.params.id
         this.getWord(wordId)
       }
@@ -44,7 +45,7 @@ export class WordPage extends Component {
     render() {
         return (
             <>
-             {this.state.singleWord && <WordComponent wordInfo={this.state.singleWord} />}   
+             {this.state.singleWord && <Word wordInfo={this.state.singleWord} />}   
             </>
         )
     }
