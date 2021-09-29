@@ -38,6 +38,8 @@
 .mc{
     background-image: url(../../../assets/images/game.jpeg);
     background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100%;
     width: 100%;
     &-container{
@@ -52,11 +54,6 @@
     &-content{
         
         position: absolute;
-        // background: linear-gradient(
-        //     to right bottom,
-        //     rgba(248, 248, 241, 0.9),
-        //     rgba(255,255,255,0.6)
-        // );
         background-color: rgba(255, 255, 255, 0.863);
         border-radius: 5px;
         box-shadow: 2px 2px 2px 2px #fdc06498;
