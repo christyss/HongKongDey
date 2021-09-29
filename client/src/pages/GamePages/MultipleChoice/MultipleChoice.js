@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import axios from 'axios';
-import scoreBackground from '../../../assets/videos/MC-background.mp4';
 import './MultipleChoice.scss';
 
 const MultipleChoice = () => {
