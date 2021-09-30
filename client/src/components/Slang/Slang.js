@@ -6,9 +6,11 @@ import './Slang.scss';
 
 const Slang = ({slang}) => {
     return (
-        <>
-        <section className="slang">
-            <Link to="/" className="slang-navbar">Home</Link>
+        <section className="slang-container">
+            <div className="slang-navbar" >
+               <Link to="/" className="slang-navbar__text">Home</Link> 
+            </div>
+            <div className="slang">
                 <div className="slang-content">
                     <div className="slang-content__left">
                         <img className="slang-content__img" src={slang.image} alt="" />
@@ -23,8 +25,8 @@ const Slang = ({slang}) => {
                     <Link to={`/learning/slang/${slang.id - 1}`} className="cta__item"><img className="cta__img" src={LeftArrow} alt="" /></Link>
                     <Link to={`/learning/slang/${Number(slang.id) + 1}`} className="cta__item"><img className="cta__img" src={RightArrow} alt="" /></Link>
                 </div>
-            </section>
-        </>    
+            </div>
+        </section>    
     )
 }
 

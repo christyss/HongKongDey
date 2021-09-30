@@ -16,34 +16,43 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    
+    &-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     
     &-navbar{
-        color: rgb(177, 172, 172);
-        text-decoration: none;
-        text-align: right;
-        margin: 1rem 3rem 0 0;
-        font-size: 1.2rem;
-        font-family: 'Inter';
-        font-weight: 400;
-
-        &:hover{
-            color: rgb(172, 238, 232);
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 1rem;
+        &__text{
+            text-decoration: none;
+            color: rgb(177, 172, 172);
+            padding-right: 3rem;
+            font-size: 1.2rem;
+            font-family: 'Inter';
+            font-weight: 600;
+            &:hover{
+                color: rgb(172, 238, 232);
+            }
         }
     }
 }
 .content{
     color: white;
     text-align: center;
-    padding: 1rem 1rem;
+    padding: 0 1rem;
     display: flex;
     justify-content: space-around;
-    height: 90%;
+    align-items: center;
+    height: 85%;
     font-family: 'Inter';
 
     &__title-en{
-        font-size: 3rem;
-        margin: 1rem 0;
+        font-size: 2.75rem;
+        margin-bottom: 1rem;
         font-weight: 600;
     }
     &__description{
@@ -79,7 +88,7 @@
 .cta-words{
     display: flex;
     justify-content: space-around;
-    margin: -2rem 2rem 3rem 2rem;
+    margin: 0 2rem 0 2rem;
     z-index: 2;
     animation: fade-in-top 2s;
     
