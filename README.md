@@ -11,7 +11,7 @@ Since you are here, let's learn some Cantonese from this app. I believe that you
 
 
 ## Appendix
-It is only support on tablet to desktop screensize for now.
+It is only support on tablet to desktop screen size for now.
 
 There are some files that are exisiting but unused, I will work on them in the future. (client: HomePageMobile, Utils & server: outh)
 
