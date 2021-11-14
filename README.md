@@ -27,6 +27,7 @@ There are some files that are exisiting but unused, I will work on them in the f
 
 API content credits:
 Time Out Hong Kong,
+Timelap Pro,
 Google Image
 
   
